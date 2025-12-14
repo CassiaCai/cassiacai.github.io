@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cassia Cai</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="head-column">
+        <img src="profile.png" alt="Cassia Cai" class="headshot" />
+      </div>
+      <div class="bio">
+        <h1>Cassia Cai</h1>
+<p>Hello! I'm Cassia. I am a PhD student in the School of Oceanography at the 
+University of Washington working with Professor LuAnne Thompson in the 
+Ocean Climate Variability Lab. My research investigates extreme  
+events, particularly marine heatwaves, and large-scale ocean circulation 
+structures like the subtropical cells using global climate models. I also 
+spent time at the Clean Energy Transition Institute as a research fellow
+and at TGS as a PhD Data Science Intern, where I developed wind farm 
+wake modeling. My undergraduate research included work with the Climate Change 
+Research Group at Northwestern University and as a Summer Student Fellow at 
+the Woods Hole Oceanographic Institution. In my free time, I like to read, spend time on Pinterest, paint, and go on city walks!
+</p>
+        <h3>News and Updates</h3>
+        <ul class="updates">
+          <li>
+            Feb 2026 — Presenting a poster at the Ocean Sciences Meeting (📍Glasgow, Scotland) on the Double-ITCZ Bias and Pacific Subtropical Cells
+          </li>
+            <!-- Add update items here; example: <li>Oct 2025 — New preprint posted.</li> -->
+        </ul>
+        
+        <!-- Social icons linking to your profiles (labels visible). -->
+        <div class="social-links" aria-label="Social links">
+          <a class="social-link" href="https://scholar.google.com/citations?user=VwTFyJ8AAAAJ&hl=en&oi=ao" title="Google Scholar" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar — Cassia Cai">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z" fill="currentColor" />
+              <path d="M11 12.2V20h2v-7.8l-1-.45-1 .45z" fill="currentColor" opacity="0.95" />
+            </svg>
+            <span class="social-label">Google Scholar</span>
+          </a>
+
+          <a class="social-link" href="https://orcid.org/0009-0007-3540-192X" title="ORCID" target="_blank" rel="noopener noreferrer" aria-label="ORCID — Cassia Cai">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="11" fill="#A6CE39" />
+              <text x="12" y="16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#fff">iD</text>
+            </svg>
+            <span class="social-label">ORCID</span>
+          </a>
+
+          <a class="social-link" href="https://github.com/CassiaCai" title="GitHub" target="_blank" rel="noopener noreferrer" aria-label="GitHub — Cassia Cai">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.6-3.37-1.19-3.37-1.19-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.02 1.53 1.02.89 1.52 2.34 1.08 2.91.83.09-.64.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.02-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.58 9.58 0 0112 6.8c.85.004 1.71.115 2.51.34 1.9-1.3 2.74-1.02 2.74-1.02.55 1.38.2 2.4.1 2.65.63.7 1.02 1.59 1.02 2.68 0 3.85-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85 0 1.33-.01 2.41-.01 2.74 0 .27.18.58.69.48A10 10 0 0022 12c0-5.52-4.48-10-10-10z" />
+            </svg>
+            <span class="social-label">GitHub</span>
+          </a>
+        </div>
+
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Research Projects</h2>
+      <ul class="project-list">
+        <li class="project-item">
+          <div class="project-text">
+            <h3>Subtropical Cells and the Double-ITCZ Bias</h3>
+            <p>The pervasive double-ITCZ bias in climate 
+                models reorganizes ocean circulation by creating 
+                artificial barriers of Potential Vorticity that block 
+                Subtropical Cell flow. This reduces tropical-subtropical 
+                connectivity and impacts decadal climate variability.
+</p>
+            <ul class="pub-sublist">
+              <li>
+                <strong>C. Cai</strong>, M. Luongo, L. Thompson, W. Kessler, A.-L. Deppenmeier. 
+                Double-ITCZ Bias Reduces Southern Hemisphere Influence on Tropics via 
+                Oceanic Pathways.<span class="status">In Progress</span>
+              </li>
+            </ul>
+          </div>
+          <img src="STC.png" alt="Subtropical Cells study map" class="project-img" />
+        </li>
+
+        <li class="project-item">
+          <div class="project-text">
+            <h3>Marine Heatwaves</h3>
+            <p>My research develops and uses object-based methods to track marine heatwaves, including the Ocetrac framework for quantifying climate events. These tools improve prediction evaluation and reveal global spatiotemporal patterns of marine heatwave evolution.
+</p>
+            <ul class="pub-sublist">
+            <li>
+                 <strong>C. Cai</strong>, C. Mendiola, L. Thompson, E.A. Maroon, A.-L. Deppenmeier, J.T. Cohen, V. Staneva. How extraordinary is The Blob marine heatwave? <span class="status">In Progress</span>
+            </li>
+            <li>
+                 <strong>C. Cai</strong>, L. Thompson, E.A. Maroon, A.-L. Deppenmeier, J.T. Cohen, V. Staneva. Drivers of Marine Heatwaves in the North Pacific Ocean. <em>Journal of Climate</em>. <span class="status">In Review</span>
+            </li>
+            <li>
+                <strong>C. Cai</strong>, J.T. Cohen, H.A. Scannell, V. Staneva, L. Thompson (2025). Ocetrac: An Object-based Framework for Tracking and Quantifying Climate Events in Gridded Datasets: Introducing the Measures Submodule. SciPy Proceedings.
+                <a class="doi" href="https://proceedings.scipy.org/articles/vxkf4244" target="_blank" rel="noopener noreferrer">DOI:10.25080/vxkf4244</a>
+            </li>
+            <li>
+                J.T. Cohen, L. Thompson, E.A. Maroon, A.-L. Deppenmeier, <strong>C. Cai</strong> (2025). 
+                Object-based evaluation of marine heatwave predictions. <em>Geophysical Research Letters.</em>. 
+                <a class="doi" href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025GL115021?af=R" target="_blank" rel="noopener noreferrer">DOI:10.1029/2025GL115021</a>
+            </li>
+                <li>
+                H.A. Scannell, <strong>C. Cai</strong>, L. Thompson, D.B. Whitt, D.J. Gagne, R.P. Abernathey (2024). Spatiotemporal Evolution of Marine Heatwaves Globally. <em>Journal of Atmospheric and Oceanic Technology</em>. 
+                                <a class="doi" href="https://journals.ametsoc.org/view/journals/atot/41/12/JTECH-D-23-0126.1.pdf" target="_blank" rel="noopener noreferrer">DOI:10.1175/JTECH-D-23-0126.1</a>
+
+              </li>
+            </ul>
+          </div>
+          <img src="marine_heatwaves.png" alt="Marine heatwaves example" class="project-img" />
+        </li>
+
+        <li class="project-item">
+          <div class="project-text">
+            <h3>Mixed Layer Depth</h3>
+            <p>As the Northeast U.S. continental shelf rapidly warms, 
+                we established its first detailed mixed layer depth climatology. 
+                The seasonal cycles vary regionally and are dominated by year-to-year 
+                changes that current models don't fully replicate.
+</p>
+            <ul class="pub-sublist">
+              <li>
+                <strong> C. Cai</strong>, Y.O. Kwon, Z. Chen, P. Fratantoni (2021). Mixed layer depth climatology over the northeast U.S. continental shelf (1993-2018). 
+                <em>Continental Shelf Research</em>. <a class="doi" href="https://www.sciencedirect.com/science/article/pii/S0278434321002661" target="_blank" rel="noopener noreferrer">DOI:10.1016/j/csr.2021/104611</a>
+              </li>
+            </ul>
+          </div>
+          <img src="mixed_layer_depth.jpg" alt="Mixed layer depth map" class="project-img" />
+        </li>
+
+      </ul>
+    </section>
+  </main>
+
+  <section class="teaching-mentorship">
+    <div class="container">
+      <h2>Teaching</h2>
+        <div class="class-item">
+          <a href="https://www.ocean.washington.edu/course/Autumn/286" target="_blank" rel="noopener noreferrer">Fluid Mechanics and Waves Lab (UW OCN 286)</a>
+          <span class="class-meta">Graduate Teaching Assistant, Prof. Susan Hautala — Autumn 2025</span>
+        </div>
+        <div class="class-item">
+          <a href="https://www.continuum.uw.edu/" target="_blank" rel="noopener noreferrer">Introduction to Mathematical Modeling (UW Continuum College)</a>
+          <span class="class-meta">Lead Instructor and Course Developer — Summers 2024, 2025</span>
+        </div>
+        <div class="class-item">
+          <a href="https://www.ocean.washington.edu/story/OCEAN_201_Introduction_to_Oceanography_Lab" target="_blank" rel="noopener noreferrer">Introduction to Oceanography Lab (UW OCN 201)</a>
+          <span class="class-meta">Graduate Teaching Assistant, Prof. Maureen Walczak — Spring 2025</span>
+        </div>
+        <div class="class-item">
+          <a href="https://www.ocean.washington.edu/story/OCEAN_210_Integrative_Oceans" target="_blank" rel="noopener noreferrer">Integrative Oceans (UW OCN 210)</a>
+          <span class="class-meta">Graduate Teaching Assistant, Prof. Steve Riser — Spring 2022</span>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Cassia Cai</p>
+  </footer>
+</body>
+</html>

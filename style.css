@@ -1,0 +1,418 @@
+/* ===== CSS RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 14px; /* slightly smaller base for compact layout */
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #000; /* primary text black */
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== HEADER ===== */
+header {
+  padding: 4rem 0 3rem;
+  background-color: #fff;
+}
+
+.header-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.headshot {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #e5e7eb;
+  flex-shrink: 0;
+}
+
+/* ===== BIO ===== */
+.bio {
+  flex: 1;
+}
+
+.bio h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.tagline {
+  font-size: 1.125rem;
+  color: #000;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.bio p {
+  margin-bottom: 1.25rem;
+  color: #000;
+  font-size: 1.125rem; /* slightly larger for the bio paragraph */
+  max-width: 800px;
+}
+
+/* Updates list in bio */
+.updates {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+  color: #111827;
+  font-size: 1rem;
+}
+
+.updates li {
+  margin-bottom: 0.4rem;
+}
+
+.bio a {
+  color: #2563eb;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.18s;
+  font-weight: 500;
+}
+
+.bio a:hover {
+  border-bottom-color: #2563eb;
+}
+
+/* ===== SOCIAL LINKS ===== */
+.social-links {
+  margin-top: 0; /* spacing handled by .head-column when placed under headshot */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* spacing between social icons */
+  justify-content: center; /* center icons in the column */
+}
+
+/* Head column: image (top) and social links (below) centered */
+.head-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.spaced-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.spaced-link:hover {
+  color: #2563eb;
+}
+
+/* Small helper for icon links used under News and Updates */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 8px 12px; /* slightly larger hit area and visual spacing */
+  color: #374151; /* neutral gray */
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.15s, color 0.15s, transform 0.08s;
+  background: transparent;
+}
+
+.social-link svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.social-link .social-label {
+  font-size: 0.95rem;
+  color: #111827;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.social-link:hover {
+  color: #2563eb;
+  background: rgba(37,99,235,0.06);
+  transform: translateY(-1px);
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  padding: 0 0 3.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #000;
+  padding-top: 2.25rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ===== PROJECTS ===== */
+.project-list {
+  list-style: none;
+  margin: 0;
+  background-color: #4e5d86; /* updated to user-specified color */
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+  display: grid;
+  gap: 1rem;
+}
+
+.project-item {
+  display: flex;
+  gap: 2rem; /* space between image and text */
+  padding: 1rem;
+  background: #fff; /* white card on top of grey */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(16,24,40,0.03);
+  align-items: flex-start;
+}
+
+.project-img {
+  width: auto;         /* don't force an explicit width (avoid upscaling small images) */
+  max-width: 320px;    /* limit maximum display width on large screens */
+  height: auto;        /* preserve original aspect ratio */
+  border-radius: 6px;
+  border: none;        /* remove border */
+  flex-shrink: 0;
+}
+
+.project-img:hover {
+  opacity: 0.95;
+}
+
+.project-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-text h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.project-text p {
+  color: #000;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Publications under each project (numbered and aligned) */
+.pub-sublist {
+  list-style: disc outside;
+  margin: 0.4rem 0 0 0;
+  padding-left: 1.25rem;
+}
+
+.pub-sublist li {
+  margin-bottom: 0.5rem;
+  color: #000;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.pub-sublist li::marker {
+  color: #111827;
+}
+
+.pub-sublist li em {
+  font-style: italic;
+  color: #444;
+}
+
+.pub-sublist li a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.pub-sublist li a:hover {
+  text-decoration: underline;
+}
+
+/* DOI link style: monospace, blue rectangular border, clickable */
+.doi {
+  display: inline-block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
+  font-size: 0.95rem;
+  color: #0645AD; /* link blue */
+  padding: 0.15rem 0.5rem;
+  border: 1px solid rgba(2, 117, 216, 0.15);
+  background: rgba(2,117,216,0.03);
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.doi:hover {
+  background: rgba(2,117,216,0.07);
+  border-color: rgba(2,117,216,0.28);
+}
+
+/* Status badges for submission/review state: light grey boxed chips */
+.status {
+  display: inline-block;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.9rem;
+  color: #6b7280; /* cool light gray text */
+  padding: 0.12rem 0.45rem;
+  border: 1px solid #e5e7eb; /* very light border */
+  background: #f8fafc; /* super light gray background */
+  border-radius: 6px;
+  margin-left: 0.35rem;
+}
+
+.status:hover {
+  background: #f1f5f9;
+  border-color: #dbe5ef;
+}
+
+/* Project images: preserve full image, no cropping, no border */
+.project-img {
+  width: auto;         /* don't force an explicit width (avoid upscaling small images) */
+  max-width: 320px;    /* limit maximum display width on large screens (reduced for slightly smaller figures) */
+  height: auto;        /* preserve original aspect ratio */
+  border-radius: 6px;
+  border: none;        /* remove border per request */
+  flex-shrink: 0;
+}
+
+.project-img:hover {
+  opacity: 0.95;
+}
+
+/* ===== TEACHING & MENTORSHIP ===== */
+.teaching-mentorship {
+  padding: 1.25rem 0;
+  border-top: none; /* remove separator line above teaching */
+  margin-top: 0; /* reduce vertical gap from previous section */
+}
+
+/* Remove the extra h2 top border/padding inside the teaching block to avoid a double line */
+.teaching-mentorship h2 {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.column h2 {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.class-item, .mentee-item {
+  margin-bottom: 1.25rem;
+}
+
+.class-item a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.class-item a:hover {
+  color: #2563eb;
+}
+
+.class-meta, .mentee-meta {
+  color: #000;
+  font-size: 0.98rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 3rem 0;
+  text-align: center;
+  color: #000;
+  border-top: 1px solid #e5e7eb;
+  font-size: 1.05rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 968px) {
+  .project-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .project-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .headshot {
+    width: 200px;
+    height: 200px;
+  }
+
+  .two-columns {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .bio h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bio h1 {
+    font-size: 1.75rem;
+  }
+
+  .spaced-link {
+    font-size: 0.95rem;
+  }
+}
+  
